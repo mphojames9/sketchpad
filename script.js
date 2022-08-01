@@ -28,23 +28,24 @@ function changeSize(input) {
     }
 
     else{
-        screen.classList.add('red');
         screen.innerText = 'Please select value between 2 and 100.';
-        const myTimeout = setTimeout(removeClassList, 5000);
-
-function removeClassList() {
-    screen.classList.remove('red');
-}
     }
 };
 
 function colorSquare(){
     if(click) {
+        screen.innerText = 'Coloring Mode';
+        screen.style.backgroundColor = 'green';
         if(color === "random") {
             this.style.backgroundColor = `hsl(${Math.random()*360},100%, 50%)`;
         }
         else {this.style.backgroundColor = color}
     }
+
+        else {
+            screen.innerText = 'Not coloring';
+            screen.style.backgroundColor = 'orange';
+        }
 
  
 };
