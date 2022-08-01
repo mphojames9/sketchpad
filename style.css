@@ -10,6 +10,7 @@
         font-family: sans-serif;
         display: inline-block;
         width: 100%;
+        color: white;
 
     }
 
@@ -22,11 +23,6 @@
         font-size: 20px;
         
     }
-
-    .red {
-        background-color: red;
-    }
-    
 
     .buttons {
         background: rgb(38, 68, 99);
