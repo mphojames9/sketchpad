@@ -1,11 +1,11 @@
-Etch-a-Sketch
+# Etch-a-Sketch
 
 This is the Etch-a-Sketch project from the curriculum of The Odin Project's.
 
-Goal
+## Goal
 Create a browser version of the toy sketchpad.
 
-Built With:
+## Built With:
 
 HTML
 
@@ -14,7 +14,7 @@ CSS
 JavaScript
 
 
-Learning Outcomes
+## Learning Outcomes
 
 Used CSS Grids and Flex to display the cells.
 More understanding of the organization of HTML elements.
