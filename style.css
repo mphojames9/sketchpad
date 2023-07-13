@@ -9,7 +9,7 @@
     --clr2: hsl(var(--hue) var(--sat2) 40%);  
     --hue: 10deg;
     --sat: 80%;
-    --sat2: 50%;
+    --sat2: 40%;
   }
 
 body {
@@ -79,6 +79,23 @@ body {
     background: linear-gradient(to top right, rgba(0, 128, 0, 0.692), rgba(128, 0, 128, 0.596), rgba(255, 166, 0, 0.596));
 }
 
+#reset {
+    border-radius: 5px;
+    color:antiquewhite;
+    width: 5em;
+    padding: 3px;
+    background-color: inherit;
+    border: rgb(43, 12, 12) 0.1px solid;
+}
+
+#reset:hover {
+    opacity: 0.9;
+}
+
+#reset:active {
+    transform: scale(0.95);
+}
+
 #value {
     color:antiquewhite;
     margin: 1em;
@@ -113,6 +130,16 @@ body {
         position: absolute;
         top: 0;
         margin-top: 3em;
+    }
+
+    #reset {
+        transform: rotate(-90deg);
+        margin: 2em;
+        width: 3.5em;
+    }
+    #reset:active {
+        transform: scale(0.95);
+        transform: rotate(-90deg);
     }
 }
 

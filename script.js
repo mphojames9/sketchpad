@@ -43,6 +43,6 @@ slideRanger.oninput = function(){
   inputValue.innerHTML = this.value;
 }
 
-if (screen.width >= '800px'){
-  arlet("error")
+function reset(){
+  location.reload();
 }
