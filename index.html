@@ -2,30 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SketchPad</title>
+  <title>sketchPad</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="center">
-  <div class="flex-container">
-    <div class="title"><h1>SketchPad</h1></div>
-    <div class="screen" id="screen"></div>
-    <div class="content">
-      <div class="board"></div>
-      <div class="buttons">
-        <button onclick="changeColor('black')" id="black" >Black</button>
-        <button onclick="changeColor('gray')" id="gray" >Gray</button>
-        <button onclick="changeColor('white')" id="white">Erassor</button>
-        <button onclick="changeColor('random')" id="random" >Random</button>
-        <button id='reset'>Reset</button>
+  <section>
+    <div class="skatchPad">
+      <div class="header">skatch Pad</div>
+      <div class="container">
+        <div class="skatch" onclick="clickChecker()"></div>
+        <div class="tools">
+          <button id="black" onclick="changeColor('black')"></button>
+          <button id="gray" onclick="changeColor('gray')"></button>
+          <button id="white" onclick="changeColor('antiquewhite')"></button>
+          <button id="random" onclick="changeColor('random')"></button>
+          <button id="reset"></button>
+            <input type="range" min="2" max="100" value="1" id="sliderRange" onchange="changeSize(this.value)">
+            <p><span id="value">0</span></p>
+        </input>
+        </div>
       </div>
     </div>
-      <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)"/>
-      <button id="sizeButton">Set Size</button>
-</div>
-</div>
+  </section>
 </body>
-<script src="script.js"></script>
 </html>
